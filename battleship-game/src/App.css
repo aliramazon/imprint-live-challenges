@@ -1,0 +1,48 @@
+#root {
+    padding: 10px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.App {
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.board {
+}
+
+.grid {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #ccc;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.grid.disabled {
+    pointer-events: none;
+}
+
+.cell {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.red {
+    background-color: red;
+}
